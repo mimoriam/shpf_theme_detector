@@ -6,7 +6,7 @@ from django.db import models
 class ThemeModel(models.Model):
     # Example: https://www.premiumtrendz.co.uk/
     theme_url = models.URLField()
-    theme_name = models.CharField(max_length=255, editable=False)
+    theme_name = models.CharField(max_length=255, blank=True)
 
     def __str__(self):
         return self.theme_url
