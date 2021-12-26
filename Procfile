@@ -1,1 +1,1 @@
-web: gunicorn myproject.wsgi
+web: gunicorn shpf_theme_detector.wsgi
